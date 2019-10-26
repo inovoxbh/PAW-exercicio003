@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS local -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Senior - Contato</title>
+  </head>
+
+  <body onload="showComentarios()">
+    <header id="cabecalho" class="container">
+        <div id="titulo" class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a class="text-muted" href="#">Subscribe</a>
+                </div>
+                <div class="col-4 text-center">
+                    <h1 class="blog-header-logo text-dark">Senior</h1>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a class="text-muted" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+                    </a>
+                    <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+                </div>
+            </div>
+        </div>
+                        
+        <div id="navegacao" class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted btn-outline-success" href="index.html">A Senior</a>
+                <a class="p-2 text-muted btn-outline-success" href="produtos.html">Produtos</a>
+                <a class="p-2 text-muted btn-outline-success" href="servicos.html">Serviços</a>
+                <a class="p-2 text-muted btn-light btn-outline-success" href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container">
+        <section id="conteudo" class="row">
+            <article class="col-md-8 blog-main">
+                <div id ="contatos" class="blog-post">
+                    <h2 class="blog-post-title">Nossos Contatos</h2>
+                    <ul class="list-group">
+                            <li class="list-group-item">E-mail: senior@senior.com.br</li>
+                            <li class="list-group-item">Telefone: (47) 3221-3300</li>
+                            <li class="list-group-item"><address>Endereço: Rua São Paulo, 825, Victor Konder - Blumenau/SC</address></li>
+                    </ul>
+                    <hr>
+                    <br/>
+                    <br/>
+                </div>
+
+                <h2>Comentários</h2>
+                <button type="submit" class="btn btn-outline-success" onclick="limparComentarios()">Limpar Comentários</button>
+                <table id="comentarios" class="table table-responsive table-striped table-bordered"></table>
+                <hr>
+                <br/>
+                <br/>
+
+                <form>
+                    <h2 class="blog-post-title">Deixe seu comentário!</h2>
+
+                    <div class="form-group">
+                        <label for="inputNome">Nome</label>
+                        <input type="text" class="form-control" id="inputNome" placeholder="Informe seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputComentario">Comentário</label>
+                        <textarea class="form-control" id="inputComentario" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-success" onclick="addComentario()">Enviar</button>
+                    <hr>
+                    <br/>
+                    <br/>
+                </form>
+
+            </article>
+
+            <aside class="col-md-4 blog-sidebar">
+                    <section id="parceiros" class="p-4">
+                        <h4 class="font-italic">Parceiros</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="https://consistema.com.br/" target="_blank">Consistema</a></li>
+                            <li><a href="https://aws.amazon.com/" target="_blank">Amazon WS</a></li>
+                            <li><a href="https://www.grupodigicon.com.br/digicon/" target="_blank">Digicon</a></li>
+                        </ul>
+                    </section>
+                
+                    <section id="redessociais" class="p-4">
+                        <h4 class="font-italic">Redes Sociais</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="https://twitter.com/sistemas_senior/" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.facebook.com/canalsenior/" target="_blank">Facebook</a></li>
+                        </ul>
+                    </section>
+            </aside>
+    
+        </section>
+         
+    </main>
+
+    <footer class="container card-header">
+        <h6>Página construída para a disciplina Padrões Web do curso de Desenvolvimento Web Full Stack da <a href="https://www.pucminas.br" target="_blank">PUC Minas</a> by <a href="http://linkedin.com/in/bruno-gonçalves-alcântara-155a9024" target="_blank">Bruno G Alcântara</a>.</h6>
+        <p> <a href="#cabecalho">Voltar para o início</a></p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
